@@ -15,5 +15,33 @@
         <tr><td>3</td><td>Half-Life 3</td></tr>
         <tr><td>4</td><td>Strawberry Sherbert goes to the moon</td></tr>
         <tr><td>5</td><td>Overwatch</td></tr></table>
+                <script type="text/javascript">
+            var currentTime = new Date();
+            var hours = 					            									currentTime.getHours();
+            var minutes = 			       												currentTime.getMinutes();
+          	var seconds =            	                   	     currentTime.getSeconds();
+            var suffix = "AM";
+
+            if (minutes < 10)
+                minutes = "0" + minutes;
+
+            if (hours >= 12) {
+                suffix = "PM";
+                hours = hours - 12;
+            }
+            if (hours == 0) {
+                hours = 12;
+            }
+
+            document.write("<b><div id='d1'>" + hours + ":" + 
+                minutes + ":" + seconds + " " + suffix + "</div></b>"); function hideElement(id_attribute_value) {
+			  if (document.getElementById &&
+				  document.getElementById(id_attribute_value) &&
+				  document.getElementById(id_attribute_value).style
+			  ) { document.getElementById(id_attribute_value).style.visibility = "hidden";
+			  };
+			}        
+        </script>
+                <button type="button" onclick="hideElement('d1');">hide div</button>
     </body>
 <html/>
