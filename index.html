@@ -44,6 +44,31 @@ Version 12/19/2013
 			im1.id = "img1popin";
 			im1.innerHTML = "";
 		}
+		function initPopout()
+		{
+			var thumb1 = document.getElementById("image1"); 
+			
+			thumb1.onmouseover = showDetailedView;
+		}
+
+		<!--cheese is good-->
+		
+		
+		function showDetailedView()
+		{
+			var im2 = document.getElementById("img1popin");
+			im2.id = "img1popout";
+			im2.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic2.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic1.jpg<TR></TABLE> ";
+			var popOut = document.getElementById("img1popout");
+			popOut.onmouseout = hideDetailedView;			
+		}
+
+		function hideDetailedView()
+		{
+			var im2 = document.getElementById("img1popout");
+			im2.id = "img1popin";
+			im2.innerHTML = "";
+		}
 	</script>
 </head>
 <body onload="initPopout();">
