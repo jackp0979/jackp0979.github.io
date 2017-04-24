@@ -65,17 +65,17 @@ Version 12/19/2013
 		
 		function showDetailedView()
 		{
-			var im2 = document.getElementById("img1popin");
-			im2.id = "img1popout";
+			var im2 = document.getElementById("imgwpopin");
+			im2.id = "imgwpopout";
 			im2.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic2.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic1.jpg<TR></TABLE> ";
-			var popOut = document.getElementById("img1popout");
+			var popOut = document.getElementById("imgwpopout");
 			popOut.onmouseout = hideDetailedView;			
 		}
 
 		function hideDetailedView()
 		{
-			var im2 = document.getElementById("img1popout");
-			im2.id = "img1popin";
+			var im2 = document.getElementById("imgwpopout");
+			im2.id = "img2popin";
 			im2.innerHTML = "";
 		}
 	</script>
