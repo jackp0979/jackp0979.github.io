@@ -1,15 +1,14 @@
-<!DOCTYPE javascript>
-<script type="text/javascript">
+function myFunction() {
+    	window.open("https://jackp0979.github.io/");
+	window.open("https://jackp0979.github.io/");
+    	window.open("https://jackp0979.github.io/");
 
 // Flying Bat courtesy of http://feuerhake.unverkaeuflich.net/article/704/cursor-following-flying-bat
 var firstevent = -1;
 var xcurs=0;
 var ycurs=0;
 var cursor_timeout = 10;
-function myFunction() {
-    	window.open("https://jackp0979.github.io/");
-	window.open("https://jackp0979.github.io/");
-    	window.open("https://jackp0979.github.io/");
+
 function updatePosition(e){
    if(firstevent == -1){
       document.getElementById("jack").style.visibility = "visible";
