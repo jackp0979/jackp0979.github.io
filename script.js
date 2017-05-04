@@ -1,47 +1,25 @@
-/*!
- * Paper.js v0.22
- *
- * This file is part of Paper.js, a JavaScript Vector Graphics Library,
- * based on Scriptographer.org and designed to be largely API compatible.
- * http://paperjs.org/
- * http://scriptographer.org/
- *
- * Copyright (c) 2011, Juerg Lehni & Jonathan Puckey
- * http://lehni.org/ & http://jonathanpuckey.com/
- *
- * Distributed under the MIT license. See LICENSE file for details.
- *
- * All rights reserved.
- *
- * Date: Thu Nov 10 19:19:25 2011 +0100
- *
- ***
- *
- * Bootstrap.js JavaScript Framework.
- * http://bootstrapjs.org/
- *
- * Copyright (c) 2006 - 2011 Juerg Lehni
- * http://lehni.org/
- *
- * Distributed under the MIT license.
- *
- ***
- *
- * Parse-js
- *
- * A JavaScript tokenizer / parser / generator, originally written in Lisp.
- * Copyright (c) Marijn Haverbeke <marijnh@gmail.com>
- * http://marijn.haverbeke.nl/parse-js/
- *
- * Ported by to JavaScript by Mihai Bazon
- * Copyright (c) 2010, Mihai Bazon <mihai.bazon@gmail.com>
- * http://mihai.bazon.net/blog/
- *
- * Modifications and adaptions to browser (c) 2011, Juerg Lehni
- * http://lehni.org/
- *
- * Distributed under the BSD license.
- */
+<!DOCTYPE javascript>
+<script type="text/javascript">
+
+// Flying Bat courtesy of http://feuerhake.unverkaeuflich.net/article/704/cursor-following-flying-bat
+var firstevent = -1;
+var xcurs=0;
+var ycurs=0;
+var cursor_timeout = 10;
+
+function updatePosition(e){
+   if(firstevent == -1){
+      document.getElementById("jack").style.visibility = "visible";
+      firstevent = 1;
+   };
+   if (navigator.appName == 'Netscape'){
+      xcurs = e.pageX;
+      ycurs = e.pageY;
+   }else{
+      xcurs = event.clientX;
+      ycurs = event.clientY;
+   };
+}
 var Jiggler = function(rest, bound) {
   Jiggler.__all.push(this);
   this.__bound = bound || function() {};
