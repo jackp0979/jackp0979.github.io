@@ -1,12 +1,4 @@
-body.bg-a { 
-  background: url(../assets/bg.gif);
-}
-body.bg-b { 
-  background: #fff;
-}
-html { 
-  height: 100%;
-}
+
 body {
   margin: 0;
   padding: 0;
@@ -23,16 +15,4 @@ body {
 }
 
 
-#compat { 
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  font: bold italic 150px serif;
-  text-shadow: 0 3px 0 rgba(0,0,0,0.15);
-  padding: 20px 40px;
-  color: #fff;
-  z-index: 2;
-  pointer-events: none;
-}
 
