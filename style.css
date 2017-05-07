@@ -3,7 +3,7 @@
 <head>
 <style>
 body  {
-    background-image: ("kawaii.jpg");
+    background-image: url("kawaii.jpg");
 
 }
 </style>
